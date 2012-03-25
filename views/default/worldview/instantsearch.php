@@ -4,6 +4,9 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
+
+$bing_app_id = elgg_get_plugin_setting('bing_app_id', 'worldview');
+
 ?>
 
 $(document).ready(function()
@@ -16,7 +19,7 @@ var search_input = $(this).val();
 var keyword= encodeURIComponent(search_input);
  
  
-var yt_url='http://api.bing.net/json.aspx?JsonType=callback&JsonCallback=?&Appid=BACC17545722CC5A41C9EFE8EA38434529CC2C23&query='+keyword+'&sources=web'; 
+var yt_url='http://api.bing.net/json.aspx?JsonType=callback&JsonCallback=?&Appid=<?php echo $bing_app_id;?>&query='+keyword+'&sources=web'; 
 
  
 $.ajax({
