@@ -13,4 +13,4 @@
      'content' => $area2,
      );
     $body = elgg_view_layout('one_column',$params);
-    page_draw($title, $body); 
+    echo elgg_view_page($title, $body); 
