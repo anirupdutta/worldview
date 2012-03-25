@@ -1,0 +1,6 @@
+This brings bing search in elgg 1.8.
+
+Actually its a very simple plugin which implements bing instant search inside elgg 1.8.
+
+You need a bing search app id which you can get from http://www.bing.com/toolbox/bingdeveloper/
+You need to get the bing search api
